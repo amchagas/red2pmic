@@ -1,0 +1,342 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM741 U?
+U 1 1 5D7A0718
+P 3400 3450
+F 0 "U?" H 3741 3496 50  0000 L CNN
+F 1 "LM741" H 3741 3405 50  0000 L CNN
+F 2 "" H 3450 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 3550 3600 50  0001 C CNN
+	1    3400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 5D7A0766
+P 3300 3100
+F 0 "#PWR?" H 3300 2950 50  0001 C CNN
+F 1 "+15V" H 3315 3273 50  0000 C CNN
+F 2 "" H 3300 3100 50  0001 C CNN
+F 3 "" H 3300 3100 50  0001 C CNN
+	1    3300 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR?
+U 1 1 5D7A0809
+P 3300 4200
+F 0 "#PWR?" H 3300 4300 50  0001 C CNN
+F 1 "-15V" H 3315 4373 50  0000 C CNN
+F 2 "" H 3300 4200 50  0001 C CNN
+F 3 "" H 3300 4200 50  0001 C CNN
+	1    3300 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D7A0858
+P 4350 4200
+F 0 "#PWR?" H 4350 3950 50  0001 C CNN
+F 1 "GND" H 4355 4027 50  0000 C CNN
+F 2 "" H 4350 4200 50  0001 C CNN
+F 3 "" H 4350 4200 50  0001 C CNN
+	1    4350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5D7A0933
+P 4150 3450
+F 0 "D?" H 4150 3715 50  0000 C CNN
+F 1 "1N5819" H 4150 3624 50  0000 C CNN
+F 2 "" H 4150 3450 50  0001 C CNN
+F 3 "~" H 4150 3450 50  0001 C CNN
+	1    4150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D7A0A2E
+P 4350 3850
+F 0 "R?" H 4420 3896 50  0000 L CNN
+F 1 "1k" H 4420 3805 50  0000 L CNN
+F 2 "" V 4280 3850 50  0001 C CNN
+F 3 "~" H 4350 3850 50  0001 C CNN
+	1    4350 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3750 3300 4200
+NoConn ~ 3500 3750
+NoConn ~ 3400 3750
+Wire Wire Line
+	3700 3450 3950 3450
+Wire Wire Line
+	4350 3450 4350 3600
+Wire Wire Line
+	4350 4200 4350 4000
+Wire Wire Line
+	3100 3550 3000 3550
+Wire Wire Line
+	3000 3550 3000 4500
+Wire Wire Line
+	3000 4500 4050 4500
+Wire Wire Line
+	4050 4500 4050 3600
+Wire Wire Line
+	4050 3600 4350 3600
+Connection ~ 4350 3600
+Wire Wire Line
+	4350 3600 4350 3700
+Connection ~ 4350 3450
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5D7A0DD5
+P 2150 3350
+F 0 "J?" H 2256 3528 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 2256 3437 50  0000 C CNN
+F 2 "" H 2150 3350 50  0001 C CNN
+F 3 "~" H 2150 3350 50  0001 C CNN
+	1    2150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3350 2650 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5D7A0F24
+P 2500 3450
+F 0 "#PWR?" H 2500 3200 50  0001 C CNN
+F 1 "GND" V 2505 3322 50  0000 R CNN
+F 2 "" H 2500 3450 50  0001 C CNN
+F 3 "" H 2500 3450 50  0001 C CNN
+	1    2500 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2500 3450 2350 3450
+$Comp
+L Amplifier_Operational:LM741 U?
+U 1 1 5D7A1016
+P 3450 1650
+F 0 "U?" H 3791 1696 50  0000 L CNN
+F 1 "LM741" H 3791 1605 50  0000 L CNN
+F 2 "" H 3500 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 3600 1800 50  0001 C CNN
+	1    3450 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 5D7A105F
+P 3350 1250
+F 0 "#PWR?" H 3350 1100 50  0001 C CNN
+F 1 "+15V" H 3365 1423 50  0000 C CNN
+F 2 "" H 3350 1250 50  0001 C CNN
+F 3 "" H 3350 1250 50  0001 C CNN
+	1    3350 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR?
+U 1 1 5D7A107E
+P 3350 2100
+F 0 "#PWR?" H 3350 2200 50  0001 C CNN
+F 1 "-15V" H 3365 2273 50  0000 C CNN
+F 2 "" H 3350 2100 50  0001 C CNN
+F 3 "" H 3350 2100 50  0001 C CNN
+	1    3350 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D7A1093
+P 2650 2300
+F 0 "R?" H 2720 2346 50  0000 L CNN
+F 1 "1k" H 2720 2255 50  0000 L CNN
+F 2 "" V 2580 2300 50  0001 C CNN
+F 3 "~" H 2650 2300 50  0001 C CNN
+	1    2650 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3350 2650 2450
+Connection ~ 2650 3350
+Wire Wire Line
+	2650 3350 3100 3350
+Wire Wire Line
+	2650 2150 2650 1850
+Wire Wire Line
+	2650 1750 3150 1750
+$Comp
+L power:GND #PWR?
+U 1 1 5D7A13E8
+P 3000 1550
+F 0 "#PWR?" H 3000 1300 50  0001 C CNN
+F 1 "GND" V 3005 1422 50  0000 R CNN
+F 2 "" H 3000 1550 50  0001 C CNN
+F 3 "" H 3000 1550 50  0001 C CNN
+	1    3000 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 1550 3150 1550
+$Comp
+L Device:R R?
+U 1 1 5D7A15DB
+P 2650 1450
+F 0 "R?" H 2720 1496 50  0000 L CNN
+F 1 "1k" H 2720 1405 50  0000 L CNN
+F 2 "" V 2580 1450 50  0001 C CNN
+F 3 "~" H 2650 1450 50  0001 C CNN
+	1    2650 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1600 2650 1750
+Connection ~ 2650 1750
+Wire Wire Line
+	3350 1950 3350 2000
+Wire Wire Line
+	3350 1350 3350 1300
+$Comp
+L pspice:DIODE D?
+U 1 1 5D7A1C25
+P 3200 2500
+F 0 "D?" H 3200 2765 50  0000 C CNN
+F 1 "1N5819" H 3200 2674 50  0000 C CNN
+F 2 "" H 3200 2500 50  0001 C CNN
+F 3 "~" H 3200 2500 50  0001 C CNN
+	1    3200 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3100 3300 3150
+Wire Wire Line
+	2650 1850 3000 1850
+Wire Wire Line
+	3000 1850 3000 2500
+Connection ~ 2650 1850
+Wire Wire Line
+	2650 1850 2650 1750
+Wire Wire Line
+	3400 2500 3900 2500
+Wire Wire Line
+	3900 2500 3900 1650
+Wire Wire Line
+	3900 1650 3750 1650
+$Comp
+L pspice:DIODE D?
+U 1 1 5D7A258A
+P 4300 1650
+F 0 "D?" H 4300 1915 50  0000 C CNN
+F 1 "1N5819" H 4300 1824 50  0000 C CNN
+F 2 "" H 4300 1650 50  0001 C CNN
+F 3 "~" H 4300 1650 50  0001 C CNN
+	1    4300 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1650 3900 1650
+Connection ~ 3900 1650
+Wire Wire Line
+	2650 1300 2650 900 
+Wire Wire Line
+	2650 900  4500 900 
+Wire Wire Line
+	4500 900  4500 1650
+Connection ~ 4500 1650
+NoConn ~ 3550 1950
+NoConn ~ 3450 1950
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 5D7A3D83
+P 5400 2100
+F 0 "J?" H 5373 2030 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 5373 2121 50  0000 R CNN
+F 2 "" H 5400 2100 50  0001 C CNN
+F 3 "~" H 5400 2100 50  0001 C CNN
+	1    5400 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 1650 5200 2000
+Wire Wire Line
+	4500 1650 5200 1650
+Wire Wire Line
+	5200 2200 5200 3450
+Wire Wire Line
+	4350 3450 5200 3450
+$Comp
+L power:GND #PWR?
+U 1 1 5D7A48F9
+P 5050 2100
+F 0 "#PWR?" H 5050 1850 50  0001 C CNN
+F 1 "GND" V 5055 1972 50  0000 R CNN
+F 2 "" H 5050 2100 50  0001 C CNN
+F 3 "" H 5050 2100 50  0001 C CNN
+	1    5050 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 2100 5050 2100
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 5D7A4ED9
+P 1700 2150
+F 0 "J?" H 1806 2428 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 1806 2337 50  0000 C CNN
+F 2 "" H 1700 2150 50  0001 C CNN
+F 3 "~" H 1700 2150 50  0001 C CNN
+	1    1700 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1300 2650 1300
+Wire Wire Line
+	1900 1300 1900 2050
+Connection ~ 3350 1300
+Wire Wire Line
+	3350 1300 3350 1250
+Connection ~ 2650 1300
+Wire Wire Line
+	2650 1300 1900 1300
+Wire Wire Line
+	3350 2000 2150 2000
+Wire Wire Line
+	2150 2000 2150 2250
+Wire Wire Line
+	2150 2250 1900 2250
+Connection ~ 3350 2000
+Wire Wire Line
+	3350 2000 3350 2100
+$Comp
+L power:GND #PWR?
+U 1 1 5D7A6871
+P 2000 2050
+F 0 "#PWR?" H 2000 1800 50  0001 C CNN
+F 1 "GND" H 2005 1877 50  0000 C CNN
+F 2 "" H 2000 2050 50  0001 C CNN
+F 3 "" H 2000 2050 50  0001 C CNN
+	1    2000 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 2050 2000 2150
+Wire Wire Line
+	2000 2150 1900 2150
+$EndSCHEMATC
