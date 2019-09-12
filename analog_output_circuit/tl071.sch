@@ -1,37 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-EELAYER 25 0
+EESchema Schematic File Version 4
+LIBS:tl071-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -46,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L TL071 U1
+L tl071-rescue:TL071 U1
 U 1 1 5AE3572D
 P 4800 3250
 F 0 "U1" H 4800 3500 50  0000 L CNN
@@ -57,7 +26,7 @@ F 3 "" H 4950 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Screw_Terminal_01x02 J1
+L tl071-rescue:Screw_Terminal_01x02 J1
 U 1 1 5AE357AE
 P 5250 4700
 F 0 "J1" H 5250 4800 50  0000 C CNN
@@ -68,7 +37,7 @@ F 3 "" H 5250 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L tl071-rescue:R R3
 U 1 1 5AE35831
 P 3500 4700
 F 0 "R3" V 3580 4700 50  0000 C CNN
@@ -79,7 +48,7 @@ F 3 "" H 3500 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R4
+L tl071-rescue:R R4
 U 1 1 5AE3590B
 P 4250 4700
 F 0 "R4" V 4330 4700 50  0000 C CNN
@@ -90,7 +59,7 @@ F 3 "" H 4250 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Screw_Terminal_01x02 J2
+L tl071-rescue:Screw_Terminal_01x02 J2
 U 1 1 5AE35979
 P 6050 3450
 F 0 "J2" H 6050 3550 50  0000 C CNN
@@ -101,7 +70,7 @@ F 3 "" H 6050 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L tl071-rescue:R R1
 U 1 1 5AE35B50
 P 2000 3350
 F 0 "R1" V 2080 3350 50  0000 C CNN
@@ -112,7 +81,7 @@ F 3 "" H 2000 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L tl071-rescue:R R2
 U 1 1 5AE35C00
 P 2000 3900
 F 0 "R2" V 2080 3900 50  0000 C CNN
@@ -131,7 +100,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 2350 3150 3600
 Wire Wire Line
-	2000 3500 2000 3750
+	2000 3500 2000 3600
 Wire Wire Line
 	2750 3600 2750 3150
 Connection ~ 2000 3600
@@ -146,11 +115,11 @@ Wire Wire Line
 Wire Wire Line
 	4850 4800 5050 4800
 Wire Wire Line
-	3350 3650 5400 3650
+	3350 3650 4800 3650
 Wire Wire Line
 	4800 3650 4800 3550
 Wire Wire Line
-	3650 4700 4100 4700
+	3650 4700 3900 4700
 Wire Wire Line
 	3900 4700 3900 3350
 Wire Wire Line
@@ -166,7 +135,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 3600 4700 3550
 Wire Wire Line
-	1750 2950 4700 2950
+	1750 2950 2000 2950
 Connection ~ 2000 2950
 Wire Wire Line
 	2000 3600 2750 3600
@@ -181,7 +150,7 @@ Wire Wire Line
 NoConn ~ 4900 3550
 NoConn ~ 5100 3250
 $Comp
-L R R?
+L tl071-rescue:R R?
 U 1 1 5AE4A828
 P 2300 2350
 F 0 "R?" V 2380 2350 50  0000 C CNN
@@ -192,7 +161,7 @@ F 3 "" H 2300 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R?
+L tl071-rescue:R R?
 U 1 1 5AE4A89F
 P 3000 2350
 F 0 "R?" V 3080 2350 50  0000 C CNN
@@ -203,10 +172,10 @@ F 3 "" H 3000 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2450 2350 2850 2350
+	2450 2350 2600 2350
 Connection ~ 2600 2350
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5AE4AACE
 P 3800 2450
 F 0 "#PWR?" H 3800 2200 50  0001 C CNN
@@ -217,7 +186,7 @@ F 3 "" H 3800 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR?
+L power:+12V #PWR?
 U 1 1 5AE4ABF9
 P 1650 2550
 F 0 "#PWR?" H 1650 2400 50  0001 C CNN
@@ -228,18 +197,18 @@ F 3 "" H 1650 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 2200 3800 2450
+	3800 2200 3800 2350
 Wire Wire Line
 	3800 2350 3150 2350
 Wire Wire Line
 	2150 2350 2000 2350
 Wire Wire Line
-	2000 1750 2000 2950
+	2000 1750 2000 2350
 Wire Wire Line
 	1650 2550 2000 2550
 Connection ~ 2000 2550
 $Comp
-L Screw_Terminal_01x02 J?
+L tl071-rescue:Screw_Terminal_01x02 J?
 U 1 1 5AE4ADC2
 P 3250 1750
 F 0 "J?" H 3250 1850 50  0000 C CNN
@@ -259,4 +228,20 @@ Wire Wire Line
 Wire Wire Line
 	2900 2200 3800 2200
 Connection ~ 3800 2350
+Wire Wire Line
+	2000 3600 2000 3750
+Wire Wire Line
+	3900 4700 4100 4700
+Wire Wire Line
+	4800 3650 5400 3650
+Wire Wire Line
+	2000 2950 4700 2950
+Wire Wire Line
+	2600 2350 2850 2350
+Wire Wire Line
+	2000 2550 2000 2950
+Wire Wire Line
+	2000 2350 2000 2550
+Wire Wire Line
+	3800 2350 3800 2450
 $EndSCHEMATC
