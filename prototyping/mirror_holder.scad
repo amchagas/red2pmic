@@ -1,3 +1,12 @@
+////////////////////////////////////////////////////////
+//// jig to hold the galvo motors and laser source /////
+//// so that the speed and response of the motors  /////
+//// can be tested.                                /////
+//// this is part of the development of an         /////
+//// scanning microscope built with off-the-shelf  /////
+////  components                                   /////
+////  CC-BY-SA 4.0 20191203 AM Chagas              /////
+////////////////////////////////////////////////////////
 
 tol = 0.1;
 
