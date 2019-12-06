@@ -1,0 +1,20 @@
+Info: Backing up file “C:\repositories\MyLab\red2pmic\analog_output_circuit\sym-lib-table” to file “C:\repositories\MyLab\red2pmic\analog_output_circuit\rescue-backup\sym-lib-table-2019-12-05-14-28-10”.
+Info: Backing up file “C:\repositories\MyLab\red2pmic\analog_output_circuit\tl071.sch” to file “C:\repositories\MyLab\red2pmic\analog_output_circuit\rescue-backup\tl071-2019-12-05-14-28-10.sch”.
+Info: Backing up file “C:\repositories\MyLab\red2pmic\analog_output_circuit\tl071.pro” to file “C:\repositories\MyLab\red2pmic\analog_output_circuit\rescue-backup\tl071-2019-12-05-14-28-10.pro”.
+Info: Backing up file “C:\repositories\MyLab\red2pmic\analog_output_circuit\tl071-cache.lib” to file “C:\repositories\MyLab\red2pmic\analog_output_circuit\rescue-backup\tl071-cache-2019-12-05-14-28-10.lib”.
+Info: Backing up file “C:\repositories\MyLab\red2pmic\analog_output_circuit\tl071-rescue.lib” to file “C:\repositories\MyLab\red2pmic\analog_output_circuit\rescue-backup\tl071-rescue-2019-12-05-14-28-10.lib”.
+Info: Backing up file “C:\repositories\MyLab\red2pmic\analog_output_circuit\tl071-rescue.dcm” to file “C:\repositories\MyLab\red2pmic\analog_output_circuit\rescue-backup\tl071-rescue-2019-12-05-14-28-10.dcm”.
+Info: Adding library “tl071-rescue”, file “${KIPRJMOD}/tl071-rescue.lib” to project symbol library table.
+Symbol “TL071” mapped to symbol library “tl071-rescue”.
+Symbol “Screw_Terminal_01x02” mapped to symbol library “tl071-rescue”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “Screw_Terminal_01x02” mapped to symbol library “tl071-rescue”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “+12V” mapped to symbol library “power”.
+Symbol “Screw_Terminal_01x02” mapped to symbol library “tl071-rescue”.
+Info: Symbol library table mapping complete!

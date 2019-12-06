@@ -1,0 +1,262 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TL071 U1
+U 1 1 5AE3572D
+P 4800 3250
+F 0 "U1" H 4800 3500 50  0000 L CNN
+F 1 "TL071" H 4800 3400 50  0000 L CNN
+F 2 "" H 4850 3300 50  0001 C CNN
+F 3 "" H 4950 3400 50  0001 C CNN
+	1    4800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_01x02 J1
+U 1 1 5AE357AE
+P 5250 4700
+F 0 "J1" H 5250 4800 50  0000 C CNN
+F 1 "Analog input" H 5250 4500 50  0000 C CNN
+F 2 "" H 5250 4700 50  0001 C CNN
+F 3 "" H 5250 4700 50  0001 C CNN
+	1    5250 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5AE35831
+P 3500 4700
+F 0 "R3" V 3580 4700 50  0000 C CNN
+F 1 "42.6k" V 3500 4700 50  0000 C CNN
+F 2 "" V 3430 4700 50  0001 C CNN
+F 3 "" H 3500 4700 50  0001 C CNN
+	1    3500 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5AE3590B
+P 4250 4700
+F 0 "R4" V 4330 4700 50  0000 C CNN
+F 1 "8.3k" V 4250 4700 50  0000 C CNN
+F 2 "" V 4180 4700 50  0001 C CNN
+F 3 "" H 4250 4700 50  0001 C CNN
+	1    4250 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Screw_Terminal_01x02 J2
+U 1 1 5AE35979
+P 6050 3450
+F 0 "J2" H 6050 3550 50  0000 C CNN
+F 1 "Analog output" H 6050 3250 50  0000 C CNN
+F 2 "" H 6050 3450 50  0001 C CNN
+F 3 "" H 6050 3450 50  0001 C CNN
+	1    6050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5AE35B50
+P 2000 3350
+F 0 "R1" V 2080 3350 50  0000 C CNN
+F 1 "21.5" V 2000 3350 50  0000 C CNN
+F 2 "" V 1930 3350 50  0001 C CNN
+F 3 "" H 2000 3350 50  0001 C CNN
+	1    2000 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5AE35C00
+P 2000 3900
+F 0 "R2" V 2080 3900 50  0000 C CNN
+F 1 "54.4k" V 2000 3900 50  0000 C CNN
+F 2 "" V 1930 3900 50  0001 C CNN
+F 3 "" H 2000 3900 50  0001 C CNN
+	1    2000 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4700 5050 4700
+Wire Wire Line
+	5400 3650 5400 3450
+Wire Wire Line
+	5400 3450 5850 3450
+Wire Wire Line
+	3150 2350 3150 3600
+Wire Wire Line
+	2000 3500 2000 3750
+Wire Wire Line
+	2750 3600 2750 3150
+Connection ~ 2000 3600
+Wire Wire Line
+	5850 3550 5650 3550
+Wire Wire Line
+	5650 3550 5650 5050
+Wire Wire Line
+	5650 5050 4850 5050
+Wire Wire Line
+	4850 5050 4850 4800
+Wire Wire Line
+	4850 4800 5050 4800
+Wire Wire Line
+	3350 3650 5400 3650
+Wire Wire Line
+	4800 3650 4800 3550
+Wire Wire Line
+	3650 4700 4100 4700
+Wire Wire Line
+	3900 4700 3900 3350
+Wire Wire Line
+	3900 3350 4500 3350
+Connection ~ 3900 4700
+Wire Wire Line
+	3350 3650 3350 4700
+Connection ~ 4800 3650
+Wire Wire Line
+	2750 3150 4500 3150
+Wire Wire Line
+	3150 3600 4700 3600
+Wire Wire Line
+	4700 3600 4700 3550
+Wire Wire Line
+	1750 2950 4700 2950
+Connection ~ 2000 2950
+Wire Wire Line
+	2000 3600 2750 3600
+Wire Wire Line
+	2600 2350 2600 3200
+Wire Wire Line
+	2600 3200 2000 3200
+Wire Wire Line
+	1750 2950 1750 4050
+Wire Wire Line
+	1750 4050 2000 4050
+NoConn ~ 4900 3550
+NoConn ~ 5100 3250
+$Comp
+L R R?
+U 1 1 5AE4A828
+P 2300 2350
+F 0 "R?" V 2380 2350 50  0000 C CNN
+F 1 "R" V 2300 2350 50  0000 C CNN
+F 2 "" V 2230 2350 50  0001 C CNN
+F 3 "" H 2300 2350 50  0001 C CNN
+	1    2300 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5AE4A89F
+P 3000 2350
+F 0 "R?" V 3080 2350 50  0000 C CNN
+F 1 "R" V 3000 2350 50  0000 C CNN
+F 2 "" V 2930 2350 50  0001 C CNN
+F 3 "" H 3000 2350 50  0001 C CNN
+	1    3000 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 2350 2850 2350
+Connection ~ 2600 2350
+$Comp
+L GND #PWR?
+U 1 1 5AE4AACE
+P 3800 2450
+F 0 "#PWR?" H 3800 2200 50  0001 C CNN
+F 1 "GND" H 3800 2300 50  0000 C CNN
+F 2 "" H 3800 2450 50  0001 C CNN
+F 3 "" H 3800 2450 50  0001 C CNN
+	1    3800 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5AE4ABF9
+P 1650 2550
+F 0 "#PWR?" H 1650 2400 50  0001 C CNN
+F 1 "+12V" H 1650 2690 50  0000 C CNN
+F 2 "" H 1650 2550 50  0001 C CNN
+F 3 "" H 1650 2550 50  0001 C CNN
+	1    1650 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2200 3800 2450
+Wire Wire Line
+	3800 2350 3150 2350
+Wire Wire Line
+	2150 2350 2000 2350
+Wire Wire Line
+	2000 1750 2000 2950
+Wire Wire Line
+	1650 2550 2000 2550
+Connection ~ 2000 2550
+$Comp
+L Screw_Terminal_01x02 J?
+U 1 1 5AE4ADC2
+P 3250 1750
+F 0 "J?" H 3250 1850 50  0000 C CNN
+F 1 "12V power supply" H 3250 1550 50  0000 C CNN
+F 2 "" H 3250 1750 50  0001 C CNN
+F 3 "" H 3250 1750 50  0001 C CNN
+	1    3250 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1750 2000 1750
+Connection ~ 2000 2350
+Wire Wire Line
+	3050 1850 2900 1850
+Wire Wire Line
+	2900 1850 2900 2200
+Wire Wire Line
+	2900 2200 3800 2200
+Connection ~ 3800 2350
+$EndSCHEMATC
