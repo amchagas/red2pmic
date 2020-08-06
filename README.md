@@ -44,6 +44,15 @@ Current to Voltage converters: Custom Hardware
 
 Cameras: Webcams, Raspberry Pi cameras, Arducams
 
+Pockels cell:
+
+    Thorlabs EO-PC-850 - Pockels Cell, 700 - 1000 nm  https://www.thorlabs.de/thorproduct.cfm?partnumber=EO-PC-850
+
+Pockels cell driver:
+
+    1) Vigitek: QBU-BT-series Bench-Top Pockels cell Drivers(~ 2500.00 USD) http://vigitek.biz/high-voltage-switches/qbu-bt-series-bench-top-pockels-cell-drivers-2/
+
+
 
 software:
 There seems to be a very well documented API for python and the Red Pitaya: PyRPL http://pyrpl.readthedocs.io/en/latest/index.html (we can start with that, in the hope to leverage from open source tools and contribute to their further development.)
@@ -51,6 +60,8 @@ There seems to be a very well documented API for python and the Red Pitaya: PyRP
 
 Useful information about how to write code to control the redpitaya with code can be found here:
 http://redpitaya.readthedocs.io/en/latest/appsFeatures/remoteControl/remoteControl.html
+
+
 
 
 
